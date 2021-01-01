@@ -9,14 +9,14 @@ def main():
     player = input('Who is rolling? ')
     roll = random.randint(1,dice_size)
     if roll == 1:
-      print(f'player rolled a {roll}! Critical Fail')
+      print(f'{player} rolled a {roll}! Critical Fail')
     elif roll == dice_size:
-      print(f'player rolled a {roll}! Critical Success!')
+      print(f'{player} rolled a {roll}! Critical Success!')
     else:
-      print(f'player rolled a {roll}')
+      print(f'{player} rolled a {roll}')
     dice_sum+= roll
     
-  print(f'You have rolled a total of {dice_sum}')
+  print(f'Total rolled is {dice_sum}')
 
 if __name__== "__main__":
   main()
